@@ -1,0 +1,8 @@
+footer {
+    background: rgba(34, 41, 45, 100%);
+}
+
+.footer-text p {
+    font-size: 10px;
+    color: white;
+}
