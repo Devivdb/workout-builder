@@ -8,6 +8,10 @@ import Faq from "./pages/faq/Faq.jsx";
 import Header from "./components/ui/header/Header.jsx";
 import Home from "./pages/home/Home.jsx";
 import Footer from "./components/ui/footer/Footer.jsx";
+import LogIn from "./pages/logIn/LogIn.jsx";
+import SignUp from "./pages/signUp/SignUp.jsx";
+
+
 
 function App() {
 
@@ -16,12 +20,14 @@ function App() {
     <>
         <Header/>
         <Routes>
-            <Route path="/" element={<Home/>}></Route>
+            <Route path="/" element={<Home/>}/>
             <Route path="/features" element={<Features/>}/>
             <Route path="/testimonials" element={<Testimonials/>}/>
             <Route path="/highlights" element={<Highlights/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/faq" element={<Faq/>}/>
+            <Route path="/log-in" element={<LogIn/>}/>
+            <Route path="/sign-Up" element={<SignUp/>}/>
         </Routes>
         <Footer/>
     </>
