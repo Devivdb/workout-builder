@@ -1,36 +1,47 @@
 import './Header.css'
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 function Header(){
     return (
         <>
-            <p>WorkoutFlow</p>
-            <header>
-                <nav>
-                    <ul>
+
+            <header className="nav-bar">
+                <p className="website-name">
+                    Workout<span>Flow</span>
+                </p>
+                <nav className="menu">
+                    <ul className="main-menu">
                         <li>
-                            <Link to="/">Home</Link>
+                            <NavLink to="/">Home</NavLink>
                         </li>
                         <li>
-                            <Link to="/features">Features</Link>
+                            <NavLink to="/features">Features</NavLink>
                         </li>
                         <li>
-                            <Link to="/testimonials">Testimonials</Link>
+                            <NavLink to="/testimonials">Testimonials</NavLink>
                         </li>
                         <li>
-                            <Link to="/highlights">Highlights</Link>
+                            <NavLink to="/highlights">Highlights</NavLink>
                         </li>
                         <li>
-                            <Link to="/contact">Contact</Link>
+                            <NavLink to="/contact">Contact</NavLink>
                         </li>
                         <li>
-                            <Link to="/faq">FAQ</Link>
+                            <NavLink to="/faq">FAQ</NavLink>
+                        </li>
+                    </ul>
+                    <ul className="sign-in-log-in">
+                        <li>
+                            <NavLink to="/log-in">Log in</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/sign-up">Sign up</NavLink>
                         </li>
                     </ul>
                 </nav>
             </header>
         </>
     );
-};
+}
 
 export default Header;

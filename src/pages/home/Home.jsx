@@ -7,9 +7,8 @@ function Home(){
 
     return (
         <>
-            <p>dsfsfsd</p>
         </>
     );
-};
+}
 
 export default Home;

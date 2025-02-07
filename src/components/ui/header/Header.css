@@ -1,8 +1,65 @@
-header {
-    background: rgba(80, 113, 250, 10%);
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background: rgba(80, 113, 250, 0.1);
+    height: 104px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-p {
-    font-size: 30px;
+.website-name {
+    font-family: 'montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.website-name span {
+    color: #57f0c2;
+}
+
+.menu {
+    font-family: 'Inter', sans-serif;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.menu .main-menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.menu .sign-in-log-in{
+    display: flex;
+    position: absolute;
+    list-style-type: none;
+    right: 0;
+    gap: 20px;
+    padding-right: 30px;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
     color: white;
+}
+
+.menu a:hover {
+    text-decoration: underline;
 }
