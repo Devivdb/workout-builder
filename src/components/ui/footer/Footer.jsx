@@ -5,33 +5,30 @@ function Footer(){
     return (
         <>
             <footer className="footer">
-                <div className="footer-text">
-                    <p>DESIGNED BY</p>
-                    <p>Devi van den Broeke</p>
-                    <p>© 2024 – 2025 Privacy Policy Privacy Preferences</p>
+                <div className="footer-container">
+                    <div className="footer-text">
+                        <p>DESIGNED BY:</p>
+                        <p>Devi van den Broeke</p>
+                        <p>© 2024 – 2025 WorkoutFlow</p>
+                    </div>
+                    <div className="footer-links">
+                        <NavLink to="/" className="footer-link">Home</NavLink>
+                        <NavLink to="/features" className="footer-link">Features</NavLink>
+                        <NavLink to="/testimonials" className="footer-link">Testimonials</NavLink>
+                        <NavLink to="/highlights" className="footer-link">Highlights</NavLink>
+                    </div>
+                    <div className="footer-sections">
+                        <div className="footer-section">
+                            <h4>Contact</h4>
+                            <NavLink to="/contact" className="footer-link">Contact form</NavLink>
+                        </div>
+                        <div className="footer-section">
+                            <h4>Questions</h4>
+                            <NavLink to="/faq" className="footer-link">FAQ</NavLink>
+                        </div>
+                    </div>
                 </div>
-                <nav className="menu">
-                    <ul className="main-menu">
-                        <li>
-                            <NavLink to="/">Home</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/features">Features</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/testimonials">Testimonials</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/highlights">Highlights</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/contact">Contact</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/faq">FAQ</NavLink>
-                        </li>
-                    </ul>
-                </nav>
+
             </footer>
         </>
     );
