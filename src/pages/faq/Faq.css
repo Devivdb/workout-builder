@@ -1,3 +1,34 @@
-.faq-background {
-    background-image: linear-gradient(to right, rgb(253, 146, 242), rgb(81, 114, 248));
+.outer-container-wrapper-faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    min-height: 79vh;
+}
+
+.outer-container-wrapper-faq h1 {
+    font-family: Montserrat, sans-serif;
+    padding-top: 20px;
+}
+
+.question {
+    background-color: #1f2937;
+    width: 600px;
+    border-radius: 5px;
+    color: white;
+    font-family: Inter, sans-serif;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.question:hover {
+    background-color: #334155;
+}
+
+.answer {
+    background-color: #334155;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Inter, sans-serif;
 }
