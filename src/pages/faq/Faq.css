@@ -18,7 +18,18 @@
     color: white;
     font-family: Inter, sans-serif;
     padding: 10px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.question.expanded {
+    padding-bottom: 20px; /* Adds extra space for the answer */
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .question:hover {
@@ -26,9 +37,17 @@
 }
 
 .answer {
-    background-color: #334155;
     margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    font-family: Inter, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #d1d5db;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.arrow-active {
+    transform: rotate(180deg); /* Rotates the arrow when expanded */
 }

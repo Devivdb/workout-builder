@@ -1,10 +1,10 @@
 import useBackground from "../../hooks/useBackground.js";
 import { useState } from "react";
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import "./Faq.css";
 
 function Faq() {
-
-    useBackground("faq-background")
+    useBackground("faq-background");
 
     const [activeQuestion, setActiveQuestion] = useState(null);
 
@@ -28,12 +28,21 @@ function Faq() {
             {questions.map((item, index) => (
                 <div
                     key={index}
-                    className="question"
+                    className={`question ${activeQuestion === index ? "expanded" : ""}`}
                     onClick={() => toggleAnswer(index)}
                     style={{ cursor: "pointer" }}
                 >
-                    <p>{item.question}</p>
-                    {activeQuestion === index && <div className="answer">{item.answer}</div>}
+                    <div className="question-header">
+                        <p>{item.question}</p>
+                        <ArrowDownwardIcon
+                            className={`arrow ${activeQuestion === index ? "arrow-active" : ""}`}
+                        />
+                    </div>
+                    {activeQuestion === index && (
+                        <div className="answer">
+                            {item.answer}
+                        </div>
+                    )}
                 </div>
             ))}
         </div>
