@@ -1,34 +1,34 @@
 import './Footer.css'
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 function Footer(){
     return (
         <>
-            <footer>
+            <footer className="footer">
                 <div className="footer-text">
                     <p>DESIGNED BY</p>
                     <p>Devi van den Broeke</p>
                     <p>© 2024 – 2025 Privacy Policy Privacy Preferences</p>
                 </div>
-                <nav>
-                    <ul>
+                <nav className="menu">
+                    <ul className="main-menu">
                         <li>
-                            <Link to="/">Home</Link>
+                            <NavLink to="/">Home</NavLink>
                         </li>
                         <li>
-                            <Link to="/features">Features</Link>
+                            <NavLink to="/features">Features</NavLink>
                         </li>
                         <li>
-                            <Link to="/testimonials">Testimonials</Link>
+                            <NavLink to="/testimonials">Testimonials</NavLink>
                         </li>
                         <li>
-                            <Link to="/highlights">Highlights</Link>
+                            <NavLink to="/highlights">Highlights</NavLink>
                         </li>
                         <li>
-                            <Link to="/contact">Contact</Link>
+                            <NavLink to="/contact">Contact</NavLink>
                         </li>
                         <li>
-                            <Link to="/faq">FAQ</Link>
+                            <NavLink to="/faq">FAQ</NavLink>
                         </li>
                     </ul>
                 </nav>

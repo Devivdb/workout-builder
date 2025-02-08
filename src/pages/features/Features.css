@@ -1,3 +1,12 @@
-.features-background {
+body {
     background-image: linear-gradient(to right, rgb(253, 146, 242), rgb(81, 114, 248));
+}
+
+img {
+    width: 50vw;
+}
+
+.features-wrapper {
+    display: flex;
+    flex-direction: column;
 }
