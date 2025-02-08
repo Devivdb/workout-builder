@@ -1,3 +1,88 @@
 .log-in-background {
     background: rgb(81, 114, 248);
 }
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+}
+
+label {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #6ff7c3;
+}
+
+.divider {
+    border: 0.5px solid white;
+    margin: 1rem 0;
+}
+
+.login-button {
+    background-color: #6ff7c3;
+    color: black;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: montserrat, sans-serif;
+}
+
+.login-button:hover {
+    background-color: #57cfa1;
+}
+
+.links {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.links a {
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
