@@ -6,28 +6,19 @@ function Header(){
         <>
 
             <header className="nav-bar">
-                <p className="website-name">
-                    Workout<span>Flow</span>
-                </p>
                 <nav className="menu">
+                    <p className="website-name">
+                        <NavLink to="/">Workout<span>Flow</span></NavLink>
+                    </p>
                     <ul className="main-menu">
                         <li>
-                            <NavLink to="/">Home</NavLink>
-                        </li>
-                        <li>
                             <NavLink to="/features">Features</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/testimonials">Testimonials</NavLink>
                         </li>
                         <li>
                             <NavLink to="/highlights">Highlights</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contact">Contact</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/faq">FAQ</NavLink>
+                            <NavLink to="/testimonials">Testimonials</NavLink>
                         </li>
                     </ul>
                     <ul className="sign-in-log-in">
@@ -45,3 +36,4 @@ function Header(){
 }
 
 export default Header;
+

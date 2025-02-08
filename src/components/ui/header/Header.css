@@ -1,65 +1,125 @@
+/* General Styles */
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
     background: rgba(80, 113, 250, 0.1);
-    height: 104px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 10vh;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.website-name {
+/* Website Name */
+.website-name a {
     font-family: 'montserrat', sans-serif;
     font-weight: bold;
     font-size: 2rem;
     text-align: left;
     color: #ffffff;
-    padding: 20px;
+    padding: 1rem;
     border-radius: 8px;
-    width: fit-content;
+    text-decoration: none;
 }
 
+/* Logo or Branding Color */
 .website-name span {
     color: #57f0c2;
+    text-decoration: none;
 }
 
+/* Navigation Menu */
 .menu {
     font-family: 'Inter', sans-serif;
-    flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    position: relative;
+    gap: 2rem;
+    width: 100%;
 }
 
-.menu .main-menu {
+/* Main Menu */
+.main-menu {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    gap: 30px;
+    gap: 2rem;
 }
 
+/* Sign-In & Log-In Section */
 .menu .sign-in-log-in{
     display: flex;
-    position: absolute;
     list-style-type: none;
-    right: 0;
-    gap: 20px;
+    gap: 1.5rem;
     padding-right: 30px;
 }
 
-.menu li {
-    margin: 0;
-}
-
+/* Menu Links */
 .menu a {
     text-decoration: none;
     color: white;
 }
 
-.menu a:hover {
+/* Hover Effects */
+.main-menu a:hover, .sign-in-log-in a:hover {
     text-decoration: underline;
 }
+
+/* ============================= */
+/*        RESPONSIVE DESIGN      */
+/* ============================= */
+
+/* Tablet View (Max Width 1024px) */
+@media (max-width: 1024px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .menu .sign-in-log-in {
+        justify-content: center;
+    }
+}
+
+/* Mobile View (Max Width 768px) */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .main-menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .menu .sign-in-log-in {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .menu a {
+        font-size: 1rem; /* Slightly smaller for mobile */
+    }
+}
+
