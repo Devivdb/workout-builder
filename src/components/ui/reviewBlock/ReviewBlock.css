@@ -1,0 +1,22 @@
+.outer-container-wrapper-review {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 75px;
+    padding: 20px 100px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: auto;
+    height: 310px;
+    width: 310px;
+    color: white;
+    border: solid white 1px;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: Inter, sans-serif;
+}
