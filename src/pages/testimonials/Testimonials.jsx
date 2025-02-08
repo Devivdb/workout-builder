@@ -1,5 +1,6 @@
 import './Testimonials.css'
 import useBackground from "../../hooks/useBackground.js";
+import ReviewBlock from "../../components/ui/reviewBlock/ReviewBlock.jsx";
 
 
 function Testimonials(){
@@ -8,7 +9,11 @@ function Testimonials(){
 
     return (
         <>
-
+            <div className="intro-text-testimonials">
+                <h1>What users are saying</h1>
+                <p>Still not convinced? See what our users love about Pumpd:</p>
+            </div>
+            <ReviewBlock></ReviewBlock>
         </>
     );
 };
