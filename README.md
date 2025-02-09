@@ -3,7 +3,7 @@
 ## Inleiding
 Workout Builder is een webapplicatie waarmee gebruikers aangepaste workout-routines kunnen maken en beheren. De applicatie biedt een eenvoudige en intuïtieve interface voor het plannen van oefeningen en het bijhouden van trainingssessies.
 
-![Screenshot van de applicatie](public/screenshot.png) *(Voeg hier een echte screenshot toe)*
+![featureOne.png](src/assets/featureOne.png)
 
 ## Benodigdheden
 Om deze applicatie lokaal te draaien, heb je het volgende nodig:
