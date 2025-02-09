@@ -15,4 +15,9 @@ button {
     background: #6ff7c3;
 }
 
+.selected-exercises-container {
+    min-height: 600px;
+    min-width: 400px;
+}
+
 

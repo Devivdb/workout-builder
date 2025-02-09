@@ -2,7 +2,6 @@ import './Features.css'
 import useBackground from "../../hooks/useBackground.js";
 import featureOne from "../../assets/featureOne.png"
 import featureTwo from "../../assets/featureTwo.png"
-import featureTree from "../../assets/featureTree.png"
 import {useState} from "react";
 
 function Features() {
@@ -13,7 +12,6 @@ function Features() {
     const images = {
         feature1: featureOne,
         feature2: featureTwo,
-        feature3: featureTree
     }
 
     const handleClick = (feature) => {
