@@ -145,7 +145,7 @@ import "./WorkoutBuilder.css";
 import Filters from "../../components/filtersExercises/FiltersExercises.jsx";
 import { fetchExercisesByEquipment } from "../../services/api/fetchExercises.js";
 import ExerciseSelection from "../../components/exercises/ExerciseSelection.jsx";
-import Sets from "../../components/Sets.jsx";
+import Sets from "../../components/Sets/Sets.jsx";
 import { saveAs } from "file-saver";
 import jsPDF from "jspdf";
 
