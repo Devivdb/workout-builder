@@ -10,6 +10,9 @@ import Home from "./pages/home/Home.jsx";
 import Footer from "./components/ui/footer/Footer.jsx";
 import LogIn from "./pages/logIn/LogIn.jsx";
 import SignUp from "./pages/signUp/SignUp.jsx";
+import WorkoutBuilder from "./pages/workoutBuilder/WorkoutBuilder.jsx";
+import Search from "./pages/search/Search.jsx";
+import ProtectedRoute from "./components/protectedRoute/protectedRoute.jsx";
 
 
 
@@ -28,7 +31,8 @@ function App() {
             <Route path="/faq" element={<Faq/>}/>
             <Route path="/log-in" element={<LogIn/>}/>
             <Route path="/sign-Up" element={<SignUp/>}/>
-            <Route path="/"/>
+            <Route path="/workout-builder" element={<ProtectedRoute><WorkoutBuilder /></ProtectedRoute>} />
+            <Route path="/search" element={<ProtectedRoute><Search /></ProtectedRoute>} />
         </Routes>
         <Footer/>
     </>

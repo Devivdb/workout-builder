@@ -9,7 +9,7 @@ function Home() {
     const navigate = useNavigate();
 
     const handleButtonClick = () => {
-        navigate("/sign-up")
+        navigate("/workout-builder")
     }
 
     return (

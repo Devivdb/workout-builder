@@ -1,0 +1,18 @@
+.workout-builder-container {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.list-of-excercises {
+    background-color: #1f2937;
+}
+
+button {
+    background: #6ff7c3;
+}
+
+

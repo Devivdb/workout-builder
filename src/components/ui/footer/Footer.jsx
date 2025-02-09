@@ -16,6 +16,8 @@ function Footer(){
                         <NavLink to="/features" className="footer-link">Features</NavLink>
                         <NavLink to="/testimonials" className="footer-link">Testimonials</NavLink>
                         <NavLink to="/highlights" className="footer-link">Highlights</NavLink>
+                        <NavLink to="/workout-builder" className="footer-link">Workout Builder</NavLink>
+                        <NavLink to="/search" className="footer-link">Exercise finder</NavLink>
                     </div>
                     <div className="footer-sections">
                         <div className="footer-section">
