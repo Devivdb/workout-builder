@@ -28,6 +28,7 @@ function App() {
             <Route path="/faq" element={<Faq/>}/>
             <Route path="/log-in" element={<LogIn/>}/>
             <Route path="/sign-Up" element={<SignUp/>}/>
+            <Route path="/"/>
         </Routes>
         <Footer/>
     </>
